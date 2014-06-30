@@ -4,4 +4,4 @@ Promo website.
 
 Polls, surveys, e.t.c
 
-Made by Nexetic Oy
+Made by Nexetic Oy.
