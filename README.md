@@ -4,4 +4,4 @@ Promo website.
 
 Polls, surveys, e.t.c.
 
-Made by Nexetic Oy. 2014. Moscow.
+Made by Nexetic Oy. 2014. Moscow
