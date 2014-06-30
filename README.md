@@ -1,3 +1,4 @@
 valo.nexetic.ru
 ===============
-Promo website
+Promo website.
+Polls, surveys, e.t.c
