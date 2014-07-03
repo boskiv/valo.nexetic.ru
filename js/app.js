@@ -8,8 +8,6 @@ $(function() {
         $("#survey-form").show(500);
     });
 
-    $("[name='my-checkbox']").bootstrapSwitch();
-
     $("#send-button").click(function(){
 
         $("#survey-form").hide();
