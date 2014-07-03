@@ -4,6 +4,10 @@ body {
     padding-bottom: 20px;
 }
 
+.td-survey  {
+    padding-bottom: 32px;
+}
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
@@ -43,12 +47,8 @@ body {
 
 /* Main marketing message and sign up button */
 .jumbotron {
-    text-align: center;
+    text-align: left;
     border-bottom: 1px solid #e5e5e5;
-}
-.jumbotron .btn {
-    padding: 14px 24px;
-    font-size: 21px;
 }
 
 /* Supporting marketing content */

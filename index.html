@@ -7,9 +7,8 @@
     <link rel="stylesheet" href="css/jambotron.css">
     <!-- Optional theme -->
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/bootstrap-switch.min.css">
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
     <title>Nexetic VALO</title>
 </head>
 <body>
@@ -24,12 +23,72 @@
         <h3 class="text-muted">Project VALO</h3>
     </div>
 
-    <div class="jumbotron">
+    <div class="jumbotron" id="reg-form">
         <h1>VALO Registration</h1>
-        <p class="lead">Get you free copy of VALO, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up now</a></p>
+        <p class="lead">Get you free copy of VALO</p>
+        <p align="center"><a class="btn btn-lg btn-success" href="#" role="button" id="create-button">New Leed</a></p>
     </div>
 
+    <div class="jumbotron" id="survey-form" hidden="true">
+        <h1>Опрос</h1>
+        <p class="lead">Get you free copy of VALO</p>
+        <table class="table">
+            <thead>
+            <tr>
+
+                <th></th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="td-survey">Пользуются ли ваши сотрудники облачными сервисами по хранению информации, например, Dropbox или Яндекс диск?</td>
+                <td width="210px" align="right">
+                    <div class="btn-group bt" data-toggle="buttons" style="font-size: 12px">
+                        <label class="btn btn-primary">
+                            <input type="radio" name="options" id="option1"> Да
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="radio" name="options" id="option2"> Нет
+                        </label>
+
+                    </div>
+                </td>
+            </tr>
+            <tr>
+
+                <td>Контролируете ли вы эту активность?</td>
+                <td width="210px" align="right">
+                    <div class="btn-group bt" data-toggle="buttons" style="font-size: 12px">
+                        <label class="btn btn-primary">
+                            <input type="radio" name="options" id="option1"> Да
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="radio" name="options" id="option2"> Нет
+                        </label>
+
+                    </div>
+                </td>
+            </tr>
+            <tr>
+
+                <td>Используют ли ваши сотрудники мобильные устройства в работе?</td>
+                <td width="210px" align="right">
+                    <div class="btn-group bt" data-toggle="buttons" style="font-size: 12px">
+                        <label class="btn btn-primary">
+                            <input type="radio" name="options" id="option1"> Да
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="radio" name="options" id="option2"> Нет
+                        </label>
+
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <p align="center"><a class="btn btn-lg btn-primary" href="#" role="button">Отправить</a></p>
+    </div>
 
 
     <div class="footer">
@@ -38,7 +97,10 @@
 
 </div> <!-- /container -->
 
-
-
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-switch.min.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
