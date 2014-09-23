@@ -23,13 +23,12 @@
 
     <div class="jumbotron" id="reg-form">
         <h1>VALO Registration</h1>
-        <p class="lead">Get you free copy of VALO</p>
+        <p class="lead">Get you copy of VALO</p>
         <p align="center"><a class="btn btn-lg btn-success" href="#" role="button" id="create-button">New Leed</a></p>
     </div>
 
     <div class="jumbotron" id="survey-form" hidden>
         <h1>Опрос</h1>
-        <p class="lead">Get you free copy of VALO now</p>
         <input type="file" accept="image/*;capture=camera">
         <table class="table">
             <thead>
@@ -41,66 +40,51 @@
             </thead>
             <tbody>
             <tr>
-                <td class="td-survey">Какова примерная численность рабочих мест вашей организации?</td>
+                <td class="td-survey"><label for="count">Сколько человек работают в вашей организации?</label></td>
                 <td width="210px" align="right">
-                    <div class="dropdown">
-                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-                            Dropdown
-                            <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">100</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">200</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">300</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">500</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1000</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2000</a></li>
-                        </ul>
-                    </div>
+                    <select class="form-control" id="count">
+                        <option>100</option>
+                        <option>200</option>
+                        <option>300</option>
+                        <option>400</option>
+                        <option>500</option>
+                    </select>
                 </td>
             </tr>
             <tr>
-                <td class="td-survey">Пользуются ли ваши сотрудники облачными сервисами по хранению информации, например, Dropbox или Яндекс диск?</td>
+                <td class="td-survey"><label for="service">Какими сервисами по хранению информации пользуются Ваши сотрудники?</label></td>
                 <td width="210px" align="right">
-                    <div class="btn-group bt" data-toggle="buttons" style="font-size: 12px">
-                        <label class="btn btn-primary">
-                            <input type="radio" name="options" id="q1a1"> Да
-                        </label>
-                        <label class="btn btn-primary">
-                            <input type="radio" name="options" id="q1a2"> Нет
-                        </label>
-
-                    </div>
+                    <select class="form-control" id="service">
+                        <option>Локальный сервер</option>
+                        <option>Dropbox</option>
+                        <option>Яндекс диск</option>
+                        <option>Google Drive</option>
+                        <option>Mail Disk</option>
+                        <option>Другое</option>
+                    </select>
                 </td>
             </tr>
             <tr>
 
-                <td>Контролируете ли вы эту активность?</td>
+                <td class="td-survey"><label for="activity">Контролируете ли вы эту активность?</label></td>
                 <td width="210px" align="right">
-                    <div class="btn-group bt" data-toggle="buttons" style="font-size: 12px">
-                        <label class="btn btn-primary">
-                            <input type="radio" name="options" id="q2a1"> Да
-                        </label>
-                        <label class="btn btn-primary">
-                            <input type="radio" name="options" id="q2a2"> Нет
-                        </label>
-
-                    </div>
+                    <select class="form-control" id="activity">
+                        <option>Да</option>
+                        <option>Нет</option>
+                        <option>Затрудняюсь ответить</option>
+                    </select>
                 </td>
             </tr>
             <tr>
 
-                <td>Используют ли ваши сотрудники мобильные устройства в работе?</td>
+                <td class="td-survey"><label for="functions">Какие дополнительные функции вам необходимы в будущем при работе с корпоративной информацией?</label></td>
                 <td width="210px" align="right">
-                    <div class="btn-group bt" data-toggle="buttons" style="font-size: 12px">
-                        <label class="btn btn-primary">
-                            <input type="radio" name="options" id="q3a1"> Да
-                        </label>
-                        <label class="btn btn-primary">
-                            <input type="radio" name="options" id="q3a2"> Нет
-                        </label>
-
-                    </div>
+                    <select class="form-control" id="functions">
+                        <option>Синхронизация и обмен файлами</option>
+                        <option>Доступ к информации с любого устройства (мобильное/пк)</option>
+                        <option>Резервное копирование/Восстановление информации</option>
+                        <option>Другое</option>
+                    </select>
                 </td>
             </tr>
             </tbody>
