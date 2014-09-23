@@ -9,6 +9,18 @@
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
 
     <title>Nexetic VALO</title>
+    <script type="text/javascript">
+
+        function PreviewImage() {
+            var oFReader = new FileReader();
+            oFReader.readAsDataURL(document.getElementById("uploadImage").files[0]);
+
+            oFReader.onload = function (oFREvent) {
+                document.getElementById("uploadPreview").src = oFREvent.target.result;
+            };
+        }
+
+    </script>
 </head>
 <body>
 <div class="container">
@@ -24,9 +36,50 @@
     <div class="jumbotron" id="reg-form">
         <h1>Регистрация</h1>
         <p class="lead">Получите Вашу копию продукта!</p>
-        <div style="text-align: center;"><label for="vcard"><i class="glyphicon glyphicon-camera vcard-label"></i></label>
-        <input type="file" id="vcard" accept="image/*;capture=camera"></div>
-        <p align="center">Добавить визитку</p>
+        <table class="table">
+            <tr>
+                <td align="center" width="400">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                            <input class="form-control" type="text" placeholder="Ваше имя">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></div>
+                            <input class="form-control" type="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-addon"><span class="glyphicon glyphicon-phone"></span></div>
+                            <input class="form-control" type="tel" placeholder="Телефон для связи">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-addon"><span class="glyphicon glyphicon-briefcase"></span></div>
+                            <input class="form-control" type="text" placeholder="Организация">
+                        </div>
+                    </div>
+                </td>
+                <td align="center">
+                    <div style="text-align: center;"><label for="vcard"><i class="glyphicon glyphicon-camera vcard-label"></i></label>
+                        <input type="file" id="vcard" accept="image/*;capture=camera" onchange="PreviewImage();">
+
+                    </div>
+                    <p align="center">Добавить визитку</p>
+                </td>
+                <td style="vertical-align: middle;">
+                    <div style="margin: 0 auto;">
+                        <img id="uploadPreview" src="" style="width: 200px; height: 100px;" border="0"/>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
         <p align="center"><a class="btn btn-lg btn-success" href="#" role="button" id="create-button">Новый клиент</a></p>
     </div>
 
