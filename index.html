@@ -70,7 +70,8 @@
         <!--</ul>-->
         <h3 class="text-muted">Проект: <strong>VALO</strong></h3>
     </div>
-
+    <form id="leed-form" role="form">
+        <div class="form-group">
     <div class="jumbotron" id="reg-form">
         <h1>Регистрация</h1>
         <p class="lead">Получите Вашу копию продукта!</p>
@@ -80,32 +81,32 @@
                     <div class="form-group">
                         <div class="input-group">
                             <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
-                            <input class="form-control" type="text" placeholder="Ваше имя">
+                            <input class="form-control" type="text" placeholder="Ваше имя" name="name">
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="input-group">
                             <div class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></div>
-                            <input class="form-control" type="email" placeholder="Email">
+                            <input class="form-control" type="email" placeholder="Email" name="email">
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="input-group">
                             <div class="input-group-addon"><span class="glyphicon glyphicon-phone"></span></div>
-                            <input class="form-control" type="tel" placeholder="Телефон для связи">
+                            <input class="form-control" type="tel" placeholder="Телефон для связи" name="phone">
                         </div>
                     </div>
 
                     <div class="form-group">
                         <div class="input-group">
                             <div class="input-group-addon"><span class="glyphicon glyphicon-briefcase"></span></div>
-                            <input class="form-control" type="text" placeholder="Организация">
+                            <input class="form-control" type="text" placeholder="Организация" name="org">
                         </div>
                     </div>
                 </td>
                 <td align="center">
                     <div style="text-align: center;"><label for="vcard"><i class="glyphicon glyphicon-camera vcard-label"></i></label>
-                        <input type="file" id="vcard" accept="image/*;capture=camera">
+                        <input type="file" id="vcard" accept="image/*;capture=camera" name="vcard">
 
                     </div>
                     <p align="center">Добавить визитку</p>
@@ -129,7 +130,7 @@
             <tr>
                 <td class="td-survey"><label for="count">Сколько человек работают в вашей организации?</label></td>
                 <td width="210px" align="right">
-                    <select class="form-control" id="count">
+                    <select class="form-control" id="count" name="count">
                         <option>100</option>
                         <option>200</option>
                         <option>300</option>
@@ -141,7 +142,7 @@
             <tr>
                 <td class="td-survey"><label for="service">Какими сервисами по хранению информации пользуются Ваши сотрудники?</label></td>
                 <td width="210px" align="right">
-                    <select class="form-control" id="service">
+                    <select class="form-control" id="service" name="service">
                         <option>Локальный сервер</option>
                         <option>Dropbox</option>
                         <option>Яндекс диск</option>
@@ -155,7 +156,7 @@
 
                 <td class="td-survey"><label for="activity">Контролируете ли вы эту активность?</label></td>
                 <td width="210px" align="right">
-                    <select class="form-control" id="activity">
+                    <select class="form-control" id="activity" name="activity">
                         <option>Да</option>
                         <option>Нет</option>
                         <option>Затрудняюсь ответить</option>
@@ -166,7 +167,7 @@
 
                 <td class="td-survey"><label for="functions">Какие дополнительные функции вам необходимы в будущем при работе с корпоративной информацией?</label></td>
                 <td width="210px" align="right">
-                    <select class="form-control" id="functions">
+                    <select class="form-control" id="functions" name="functions">
                         <option>Синхронизация и обмен файлами</option>
                         <option>Доступ к информации с любого устройства (мобильное/пк)</option>
                         <option>Резервное копирование/Восстановление информации</option>
@@ -178,7 +179,8 @@
         </table>
         <p align="center"><a class="btn btn-lg btn-primary" href="#" role="button" id="send-button">Отправить</a></p>
     </div>
-
+            </div>
+    </form>
 
     <div class="footer">
         <p>&copy; Nexetic 2014</p>
