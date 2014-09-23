@@ -28,6 +28,14 @@ body {
     line-height: 40px;
 }
 
+#vcard {
+    display: none;
+}
+
+.vcard-label {
+    font-size: 10em;
+}
+
 /* Custom page footer */
 .footer {
     padding-top: 19px;

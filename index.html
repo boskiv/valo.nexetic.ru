@@ -24,20 +24,16 @@
     <div class="jumbotron" id="reg-form">
         <h1>Регистрация</h1>
         <p class="lead">Получите Вашу копию продукта!</p>
+        <div style="text-align: center;"><label for="vcard"><i class="glyphicon glyphicon-camera vcard-label"></i></label>
+        <input type="file" id="vcard" accept="image/*;capture=camera"></div>
+        <p align="center">Добавить визитку</p>
         <p align="center"><a class="btn btn-lg btn-success" href="#" role="button" id="create-button">Новый клиент</a></p>
     </div>
 
     <div class="jumbotron" id="survey-form" hidden>
         <h1>Опрос</h1>
-        <input type="file" accept="image/*;capture=camera">
-        <table class="table">
-            <thead>
-            <tr>
 
-                <th></th>
-                <th></th>
-            </tr>
-            </thead>
+        <table class="table">
             <tbody>
             <tr>
                 <td class="td-survey"><label for="count">Сколько человек работают в вашей организации?</label></td>
